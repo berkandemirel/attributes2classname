@@ -1,5 +1,5 @@
 
-This repository contains a TensorFlow implementation of the Attributes2Classname: A discriminative model for attribute-based unsupervised zero-shot learning.
+This repository contains a TensorFlow implementation of the (Attributes2Classname: A discriminative model for attribute-based unsupervised zero-shot learning). [https://arxiv.org/pdf/1705.01734.pdf]
 
 ### License
 
