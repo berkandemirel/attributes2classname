@@ -25,7 +25,7 @@ lossType = {0: "predicateBased", 1: "imageBased", 2: "combined"}
 DATASET = datasetList[1]
 languageModel = sideInformationList[0]
 networkModel = networkModelList[0]
-applyLossType = lossType[0]
+applyLossType = lossType[1]
 applyCrossValidation = False
 saveWordVectors = False
 
@@ -62,7 +62,7 @@ def prepareData(mainPath, stopIter = 0, overfittingThreshold = 0):
         __C.SAVE_MODEL = False
 
     __C.NUM_EPOCH = 1000000
-    __C.NUM_HIDDEN = [400]#[100, 200, 300, 400, 500]
+    __C.NUM_HIDDEN = [100]#[100, 200, 300, 400, 500]
     __C.VERBOSE = True
     __C.PERTURBED_EXAMPLES = False
     __C.PERTURBED_EXAMPLE_CORRLEVEL = 5
@@ -101,7 +101,7 @@ if __name__ == '__main__':
 
     if applyCrossValidation:
 
-        __C = prepareData(DATASET,  10000,0)
+        __C = prepareData(DATASET,  30000,0)
 
         try:
             os.remove(os.getcwd() + '/' + __C.LOG_FILE)
@@ -112,7 +112,7 @@ if __name__ == '__main__':
 
             for currFold in xrange(__C.NUMBER_OF_FOLD):
 
-                __C = prepareData(__C.CV_PATH+str(currFold+1), 10000,0)
+                __C = prepareData(__C.CV_PATH+str(currFold+1), 30000,0)
                 __C.CURR_HIDDEN = currHidden
 
                 with open('objs.pickle', 'w') as f:
@@ -136,7 +136,7 @@ if __name__ == '__main__':
             print max(cvAccr.iteritems(), key=operator.itemgetter(1))[0]
 
     else:
-        __C = prepareData(DATASET, 10000, 0)
+        __C = prepareData(DATASET, 26000, 0)
 
         try:
             os.remove(os.getcwd() + '/' + __C.LOG_FILE)
