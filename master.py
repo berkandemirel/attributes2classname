@@ -17,9 +17,9 @@ cfg = __C
 
 tmpFileName = 'tmpfile'
 
-datasetList = {0:"data/aPaY", 1:"data/AwA", 2:"data/CUB"}
-sideInformationList = {0: "GloVe/AWV", 1: "GloVe/FWV", 2: "word2vec"}
-networkModelList = {0: "VGG19", 1: "GoogleNet"}
+datasetList = {0:"data/aPaY", 1:"data/AwA"}
+sideInformationList = {0: "GloVe/AWV", 1: "word2vec"}
+networkModelList = {0: "CNN_M2K", 1: "GoogleNet"}
 lossType = {0: "predicateBased", 1: "imageBased", 2: "combined"}
 
 DATASET = datasetList[1]
