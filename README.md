@@ -27,8 +27,8 @@ If you find attributes2classname useful in your research, please consider citing
 
 ### Pretrained models:
 Pretrained models and related parameters are shared under `models/` directory. `NUM_HIDDEN` and `stopIter` parameters for these models are as follows:
-*IBT-AwA: NUM_HIDDEN=100, stopIter=26000
-*PBT-AwA: NUM_HIDDEN=400, stopIter=6000
-*IBT-aPaY: NUM_HIDDEN=100, stopIter=15800
-*PBT-aPaY: NUM_HIDDEN=100, stopIter=6000
+* IBT-AwA: NUM_HIDDEN=100, stopIter=26000
+* PBT-AwA: NUM_HIDDEN=400, stopIter=6000
+* IBT-aPaY: NUM_HIDDEN=100, stopIter=15800
+* PBT-aPaY: NUM_HIDDEN=100, stopIter=6000
 
