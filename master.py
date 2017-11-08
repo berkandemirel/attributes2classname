@@ -18,7 +18,7 @@ cfg = __C
 tmpFileName = 'tmpfile'
 
 datasetList = {0:"data/aPaY", 1:"data/AwA"}
-sideInformationList = {0: "GloVe/AWV", 1: "word2vec"}
+sideInformationList = {0: "GloVe", 1: "word2vec"}
 networkModelList = {0: "CNN_M2K", 1: "GoogleNet"}
 lossType = {0: "predicateBased", 1: "imageBased", 2: "combined"}
 
@@ -36,7 +36,7 @@ def prepareData(mainPath, stopIter = 0, overfittingThreshold = 0):
     if DATASET == datasetList[0]:
         __C.SAVE_FILE = 'aPaYResults.txt'
         __C.VISUAL_DATA = 'visual/aPaY/'
-        __C.LEARNED_MODEL_PATH = 'models/aPaY/'
+        __C.LEARNED_MODEL_PATH = 'models/'+applyLossType+'/aPaY/'
         __C.WORD_VECTORS = 'wordVectors/aPaY/'
         __C.LOG_FILE = 'aPaYLog.txt'
 
@@ -44,12 +44,12 @@ def prepareData(mainPath, stopIter = 0, overfittingThreshold = 0):
         __C.SAVE_FILE = 'AwAResults.txt'
         __C.VISUAL_DATA = 'visual/AwA/'
         __C.WORD_VECTORS = 'wordVectors/AwA/'
-        __C.LEARNED_MODEL_PATH = 'models/AwA/'
+        __C.LEARNED_MODEL_PATH = 'models/'+applyLossType+'/AwA/'
         __C.LOG_FILE = 'AwALog.txt'
     elif DATASET == datasetList[2]:
         __C.SAVE_FILE = 'CUBResults.txt'
         __C.VISUAL_DATA = 'visual/CUB/'
-        __C.LEARNED_MODEL_PATH = 'models/CUB/'
+        __C.LEARNED_MODEL_PATH = 'models/'+applyLossType+'/CUB/'
         __C.WORD_VECTORS = 'wordVectors/CUB/'
         __C.LOG_FILE = 'CUBLog.txt'
 

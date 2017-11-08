@@ -27,3 +27,4 @@ If you find attributes2classname useful in your research, please consider citing
 
 ### Pretrained models:
 Pretrained models and related parameters will be provided for AwA and aPaY datasets.
+

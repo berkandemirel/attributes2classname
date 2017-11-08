@@ -12,8 +12,6 @@ import operator
 import pickle, master
 import matplotlib.pyplot as plt
 from datetime import datetime
-import scipy.io as sio
-
 
 def drawAccuracyCurves( trainData, testData, timeStamp ):
 
@@ -64,7 +62,6 @@ def drawConfusionMatrix( confusionMatrix, timeStamp):
 def drawBarChart(barList, timeStamp):
 
     width = .35
-    sio.savemat('barListPBW.mat', {'barList': barList})
 
     with open('objs.pickle') as f:
         __C = pickle.load(f)

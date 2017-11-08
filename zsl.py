@@ -11,11 +11,10 @@ import numpy as np
 import tensorflow as tf
 import scipy.io as sio
 from scipy import spatial
-import random, master, results
+import master, results
 import tflearn, itertools
 import pickle
 from datetime import datetime
-from sklearn.preprocessing import normalize
 
 FLAGS = tf.app.flags.FLAGS
 
@@ -263,7 +262,7 @@ def main(argv=None):
     with tf.Session() as s:
         # Run all the initializers to prepare the trainable parameters.
         try:
-            if __C.get('SAVE_MODEL') == False:
+            if __C.get('SAVE_MODEL') == True:
                 saver.restore(s, __C.get('LEARNED_MODEL_PATH')+str(num_hidden)+".ckpt")
             else:
                 tf.initialize_all_variables().run()
