@@ -26,5 +26,9 @@ If you find attributes2classname useful in your research, please consider citing
 3. After learning the relevant parameters, run the training script with these parameters to train and evaluate the PBT or IBT model. The applyCrossValidation variable must be marked False (`applyCrossValidation=False`) in order to learn and evaluate the correct model.
 
 ### Pretrained models:
-Pretrained models and related parameters will be provided for AwA and aPaY datasets.
+Pretrained models and related parameters are shared under `models/` directory. `NUM_HIDDEN` and `stopIter` parameters for these models are as follows:
+*IBT-AwA: NUM_HIDDEN=100, stopIter=26000
+*PBT-AwA: NUM_HIDDEN=400, stopIter=6000
+*IBT-aPaY: NUM_HIDDEN=100, stopIter=15800
+*PBT-aPaY: NUM_HIDDEN=100, stopIter=6000
 
