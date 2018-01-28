@@ -19,7 +19,14 @@ If you find attributes2classname useful in your research, please consider citing
         month = {Oct},
         year = {2017}
     }
-  
+### Software Requirements
+    scipy==0.19.0
+    tflearn==0.3.1
+    numpy==1.13.0
+    easydict==1.6
+    tensorflow==1.0.1
+    matplotlib==1.5.1
+    
 ### How to train and evaluate a model:
 1. Modify the training script (i.e. `master.py`) to point to your data directory.
 2. Run the training script (i.e. `master.py`) to learn best parameters for your features. The applyCrossValidation variable must be marked True (`applyCrossValidation=True`) in order to learn the parameters.
