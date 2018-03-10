@@ -12,13 +12,13 @@ attributes2classname is released under the MIT License (refer to the LICENSE fil
 
 If you find attributes2classname useful in your research, please consider citing:
 
-    @InProceedings{Demirel_2017_ICCV,
-        author = {Demirel, Berkan and Cinbis, Ramazan Gokberk and Ikizler-Cinbis, Nazli},
-        title = {Attributes2Classname: A Discriminative Model for Attribute-Based Unsupervised Zero-Shot Learning},
-        booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-        month = {Oct},
-        year = {2017}
+    @article{demirel2017attributes2classname,
+    title={Attributes2Classname: A discriminative model for attribute-based unsupervised zero-shot learning},
+    author={Demirel, Berkan and Cinbis, Ramazan Gokberk and Ikizler-Cinbis, Nazli},
+    journal={arXiv preprint arXiv:1705.01734},
+    year={2017}
     }
+
 ### Software Requirements
     scipy==0.19.0
     tflearn==0.3.1
